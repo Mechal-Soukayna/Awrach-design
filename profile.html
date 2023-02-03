@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="my-form container p-5 my-5 rounded border ">
+        <form>
+            <h2 class="text-center">Profile</h2><br>
+            <hr><br>
+            <div class="Ajouter" >
+                <div class="form-row">
+                    <label for="inputnom"  id="labelAjouter">Le nom complet :</label>
+                    <input type="text" class="form-control" id="NomCompProfile" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="inputsexe"  id="labelAjouter">Sexe :</label>
+                    <input type="radio" class="control" id="SexHommeProfile" name="sexe">Homme
+                    <input type="radio" class="control" id="SexFemmeProfile" name="sexe">Femme
+                </div><br>
+                <div class="form-row">
+                    <label for="inputdate"  id="labelAjouter">Date de naissance :</label>
+                    <input type="date" class="form-control" id="DateNaissProfile" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="inputrole"  id="labelAjouter">Role :</label>
+                    <input type="radio" name="role" id="RoleAdminProfile">Admin
+                    <input type="radio" name="role" id="RoleUserProfile">User
+                </div><br>
+                <div class="form-row">
+                    <label for="inputservice"  id="labelAjouter">Service :</label>
+                    <select name="service" id="ServiceProfile" required>
+                        <option value="Urbanisme">مصلحةالتعمير</option>
+                        <option value="EtatCivil">مصلحة الحالة المدنية</option>
+                        <option value="Finance">مصلحة المداخيل</option>
+                        <option value="Pitrimoine"> مصلحة الممتلكات</option>
+                        <option value="PresidentServices">رئيس المصالح </option>
+                    </select>
+                </div><br>
+                <div class="form-row">
+                    <label for="inputemail"  id="labelAjouter">Email :</label>
+                    <input type="email" class="form-control" id="EmailProfile" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="inputpassword"  id="labelAjouter">Mot de passe :</label>
+                    <input type="password" class="form-control" id="PasswordProfile" required><br>
+                </div><br>
+                <div class="form-row">
+                    <label for="inputpassword"  id="labelAjouter">Confirmer le mot de passe :</label>
+                    <input type="password" class="form-control" id="ConfirPasswordProfile" required>
+                </div><br>
+            </div><br>
+            <button type="submit" class="btn" id="btnajouteruser">Ajouter</button>
+        </form>
+    </div>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

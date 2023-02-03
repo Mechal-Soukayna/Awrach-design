@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <title>Rechercher</title>
+</head>
+<body>
+    <div class="navbarbuttons">
+        <button type="button" class="btn-secondary btnnav">Ajouter</button>
+        <button type="button" class="btn-secondary btnnav">Rechercher</button>
+        <button type="button" class="btn-secondary btnnav">Afficher</button>
+        <button type="button" class="btn-secondary btnnav" onclick="imprimer()" >Imprimer</button>
+    </div>
+    <div class="my-form container p-5 my-5 rounded border">
+        <form>
+            <h2>Rechercher des fichier</h2><br>
+            <hr><br><br>
+            <div class="rechercher">
+                <div class="form-row">
+                    <label for="inputCin" id="labelChercher" >CINE :</label>
+                    <input type="text" class="form-control" id="CinRechercher" placeholder="رقم بطاقة التعريف الوطنية" ><br>
+                </div><br>
+                <div class="form-row">
+                    <label for="inputNomcomplet" id="labelChercher">Le nom complet :</label>
+                    <input type="text" class="form-control" id="NomCompRechercher" placeholder="الاسم الكامل" >
+                </div><br>
+                    <div class="form-row">
+                        <label for="inputAdresse" id="labelChercher">Adresse :</label>
+                        <input type="text" class="form-control" id="AdresseRechercher" placeholder="العنوان" >
+                    </div> 
+                </div><br><br>
+                    <button type="submit" class="btn" id="btnsearch">Chercher</button><br>
+            <div class="table">
+                <table class="tablechercher">
+                    <thead>
+                        <tr>
+                            <th>Fichiers</th>
+                            <th>Ajouter les attestations</th>
+                            <th>Modifier</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>File2</td>
+                            <td><input type="file" name="images" id="images"></td>
+                            <td><input type="button" value="Modifier" id="btntable"></td>
+                        </tr>
+                        <tr>
+                            <td>File2</td>
+                            <td><input type="file" name="images" id="images"></td><br><br>
+                            <td><input type="button" value="Modifier" id="btntable"></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+
+    </div>
+  
+</body>
+    <script src="css/bootstrap.min.css"></script>
+    <script src="javascript/MyJS.js"></script>
+</html>

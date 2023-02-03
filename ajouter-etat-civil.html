@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <title>مصلحة الحالة المدنية </title>
+</head>
+<body>
+    <div class="navbarbuttons">
+        <button type="button" class="btn-secondary btnnav" id="btnAjouter">Ajouter</button>
+        <button type="button" class="btn-secondary btnnav" id="btnRechercher">Rechercher</button>
+        <button type="button" class="btn-secondary btnnav" id="btnAfficher">Afficher</button>
+        <button type="button" class="btn-secondary btnnav" id="btnImprimer" onclick="imprimer()">Imprimer</button>
+      </div>
+    <div class="my-form container p-5 my-5 rounded border">
+        <form>
+            <h2>مصلحة الحالة المدنية </h2><br>
+            <hr><br><br>
+            <div class="Ajouter">
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Les années:</label>
+                    <input type="number" class="form-control" id="AnneesEtatCivil" placeholder="السنوات">
+                </div><br> 
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >La boîte d'archives:</label>
+                    <input type="number" class="form-control" id="BoiteArchiveEtatCivil" placeholder="الصندوق">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Le numéro d'ordre:</label>
+                    <input type="number" class="form-control" id="NumOrdreEtatCivil" placeholder="الرقم الترتيبي ">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Numéro de fichier :</label>
+                    <input type="number" class="form-control" id="NumFichierEtatCivil" placeholder="رقم الملف">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">CINE   :</label>
+                    <input type="text" class="form-control" id="CinEtatCivil" placeholder=" رقم البطاقة الوطنية ">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Le nom complet:</label>
+                    <input type="text" class="form-control" id="NomCompEtatCivil" placeholder=" الاسم الشخصي والعائلي">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Date de naissance:</label>
+                    <input type="date" class="form-control" id="DateNaissEtatCivil" placeholder=" تاريخ الازدياد  ">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Date de dépôt  :</label>
+                    <input type="date" class="form-control" id="DateDepotEtatCivil" placeholder=" تاريخ الإيداع  ">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Numéro d'éta civil :</label>
+                    <input type="text" class="form-control" id="NumEtatCivil" placeholder=" رقم الحالة المدنية   ">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Nombre d'acte :</label>
+                    <input type="number" class="form-control" id="NumActeEtatCivil" placeholder=" رقم الرسم   ">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Le deposant:</label>
+                    <input type="text" class="form-control" id="DeposantEtatCivil" placeholder="المودع ">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Le premiere femme :</label>
+                    <input type="text" class="form-control" id="PremiereFemmeEtatCivil" placeholder=" الزوجة الأولى   ">
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Divorce :</label>
+                    <input type="radio" name="divorce" id="DivorceOui"><span>Oui</span>
+                    <input type="radio" name="divorce" id="DivorceNon"><span>Non</span>
+                </div><br> <br>
+                    <button type="submit" class="btn" id="btnajouterEtatCivil">Ajouter</button><br><br>
+        </form>
+    </div>
+    <script src="javascript/MyJS.js"></script>
+</body>

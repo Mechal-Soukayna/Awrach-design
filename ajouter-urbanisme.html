@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <title>مصلحة التعمير</title>
+</head>
+<body>
+    <div class="navbarbuttons">
+        <button type="button" class="btn-secondary btnnav">Ajouter</button>
+        <button type="button" class="btn-secondary btnnav">Rechercher</button>
+        <button type="button" class="btn-secondary btnnav">Afficher</button>
+        <button type="button" class="btn-secondary btnnav" onclick="imprimer()">Imprimer</button>
+      </div>
+    <div class="my-form container p-5 my-5 rounded border">
+        <form>
+            <h2>مصلحة التعمير </h2><br>
+            <hr><br><br>
+            <div class="Ajouter">
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Années:</label>
+                    <input type="number" class="form-control" id="CinUrbanisme" placeholder="السنوات" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Le numéro d'ordre:</label>
+                    <input type="number" class="form-control" id="NumOrdreUrbanisme" placeholder="  الرقم الترتيبي" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Le nombre:</label>
+                    <input type="number" class="form-control" id="NumUrbanisme" placeholder="الرقم" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >CINE :</label>
+                    <input type="text" class="form-control" id="CinUrbanisme" placeholder="رقم البطاقة الوطنية" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Le nom complet :</label>
+                    <input type="text" class="form-control" id="NomCompUrbanisme" placeholder="الاسم الشخصي والعائلي" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Adresse :</label>
+                    <input type="text" class="form-control" id="AdresseUrbanisme" placeholder="موقع المشروع" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Type de permis :</label>
+                    <select name="permis" id="TypePermisUrbanisme" required>
+                        <option value="PermisConstruire">رخص البناء</option>
+                        <option value="PermisReconstruire">رخص الإصلاح </option>
+                        <option value="PermisُEau">رخص ادخال الماء الصالح للشرب</option>
+                        <option value="Permis">رخص السكنى و المطابقة </option>
+                        <option value="FichierConstruire">ملفات البناء قصد الدراسة </option>
+                        <option value="AttestationAdministratif">الشواهد الإدارية المختلفة  </option>
+                        <option value="PermisCollective">شغل الأملاك الجماعية</option>
+                        <option value="PermisAliya">تجزئة العالية العمران</option>
+                    </select>
+                </div><br>
+                <div class="form-row">
+                    <label for="label" id="labelAjouter">Type de projet :</label>
+                    <input type="text" class="form-control" id="TypeProjetUrbanisme" placeholder="طبيعة المشروع " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label" id="labelAjouter">Surface ouverte:</label>
+                    <input type="text" class="form-control" id="SurfaceOuverUrbanisme" placeholder="المساحة المغطاة" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label" id="labelAjouter">Balcon :</label>
+                    <input type="text" class="form-control" id="BalconUrbanisme" placeholder="البروزات" required>
+                </div><br>
+                    <label for="label" id="labelAjouter">Date :</label>
+                    <input type="date" class="form-control" id="DateUrbanisme" placeholder="التاريخ" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Type d'attestation :</label>
+                    <input type="text" class="form-control" id="TypeAttesUrbanisme" placeholder=" نوع الشهادة" required>
+                </div><br>
+                <div class="from-row">
+                    <label for="label" id="labelAjouter" >Choisir un fichier :</label>
+                    <input type="file" id="FichierUrbanisme" required><br><br><br><br>
+                </div> 
+                <button type="submit" class="btn" id="btnajouterUrbanisme">Ajouter</button><br><br>
+            </div>    
+        </form>
+    </div>
+    <script src="js/MyJS.js"></script>
+</body>

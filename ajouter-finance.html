@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <title>مصلحة المداخيل </title>
+</head>
+<body>
+    <div class="navbarbuttons">
+        <button type="button" class="btn-secondary btnnav">Ajouter</button>
+        <button type="button" class="btn-secondary btnnav">Rechercher</button>
+        <button type="button" class="btn-secondary btnnav">Afficher</button>
+        <button type="button" class="btn-secondary btnnav" onclick="imprimer()">Imprimer</button>
+      </div>
+    <div class="my-form container p-5 my-5 rounded border">
+        <form>
+            <h2>مصلحة المداخيل </h2><br>
+            <hr><br><br>
+            <div class="Ajouter">
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Le numéro d'ordre:</label>
+                    <input type="number" class="form-control" id="NumOrdreFinance" placeholder="الرقم الترتيبي " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Matricule:</label>
+                    <input type="text" class="form-control" id="MatrFinance" placeholder="رقم تسجيل المركبة " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Type de véhicule:</label>
+                    <input type="text" class="form-control" id="TypeVehicFinance" placeholder=" نوع المركبة" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">CINE :</label>
+                    <input type="text" class="form-control" id="CinFiance" placeholder="رقم بطاقة التعريف الوطنية" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Le nom complet:</label>
+                    <input type="text" class="form-control" id="NomCompFinance" placeholder="الاسم الشخصي والعائلي" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Date de dépot :</label>
+                    <input type="date" class="form-control" id="DateDepotFinance" placeholder=" تاريخ الإيداع بالمحجز  " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Date de retrait:</label>
+                    <input type="date" class="form-control" id="DateRetrFinance" placeholder=" تاريخ السحب  " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Numéro de reçu  :</label>
+                    <input type="number" class="form-control" id="NumRecuFinance" placeholder="  رقم التوصيل  " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Date de reçu:</label>
+                    <input type="date" class="form-control" id="DateRecuFinance" placeholder="تاريخ التوصيل " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Véhicule (retiré / non retiré):</label><br>
+                    <input type="radio" name="divorce" id="divorceoui"><span>تم السحب</span>
+                    <input type="radio" name="divorce" id="divorcenon"><span>لم يتم السحب</span>
+                </div><br><br>
+                    <button type="submit" class="btn" id="btnajouterFinance">Ajouter</button><br><br>
+        
+        </form>
+    </div>
+    <script src="javascript/MyJS.js"></script>
+</body>

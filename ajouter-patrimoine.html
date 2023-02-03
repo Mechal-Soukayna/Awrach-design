@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <title>مصلحة الممتلكات </title>
+</head>
+<body>
+    <div class="navbarbuttons">
+        <button type="button" class="btn-secondary btnnav">Ajouter</button>
+        <button type="button" class="btn-secondary btnnav">Rechercher</button>
+        <button type="button" class="btn-secondary btnnav">Afficher</button>
+        <button type="button" class="btn-secondary btnnav" onclick="imprimer()">Imprimer</button>
+      </div>
+    <div class="my-form container p-5 my-5 rounded border">
+        <form>
+            <h2>مصلحة الممتلكات </h2><br>
+            <hr><br><br>
+            <div class="Ajouter">
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Le nom complet:</label>
+                    <input type="text" class="form-control" id="NomCompPatrimoine" placeholder="الإسم الشخصي والعائلي " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >CINE :</label>
+                    <input type="text" class="form-control" id="CinPatrimoine" placeholder="رقم البطاقة الوطنية " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter" >Adresse du locataire :</label>
+                    <input type="text" class="form-control" id="AdresseLocatairePatrimoine" placeholder="عنوان المكتري " required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Adresse de la boutique   :</label>
+                    <input type="number" class="form-control" id="AdresseBoutiPatrimoine" placeholder="رقـم الدكـان" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Type d'activité :</label>
+                    <input type="text" class="form-control" id="TypeActivPatrimoine" placeholder="نوع النشاط الممارس" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Le prix mensuel payé :</label>
+                    <input type="text" class="form-control" id="PrixMensuelPatrimoine" placeholder="المبلغ الشهري الواجب أداؤه" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Date début  d'acte :</label>
+                    <input type="date" class="form-control" id="DateDebutActePatrimoine" placeholder="تاريخ بداية العقد" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Date fin d'acte :</label>
+                    <input type="date" class="form-control" id="DateFinActePatrimoine" placeholder="تاريخ نهابة العقد" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Mois derniere effectué:</label>
+                    <input type="text" class="form-control" id="MoisDernEffectPatrimoine" placeholder="آخر شهر مؤدى عنه" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Numéro du reçu ou du credit :</label>
+                    <input type="number" class="form-control" id="NumRecuPatrimoine" placeholder="رقم التوصيل أو الدين" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Date de payment:</label>
+                    <input type="date" class="form-control" id="DatePayPatrimoine" placeholder="تاريخ الاستخلاص" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Le mois non payée  :</label>
+                    <input type="number" class="form-control" id="MoisNonPayPatrimoine" placeholder="عدد الشهور الباقي استخلاصها" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Le montant restant non payé  :</label>
+                    <input type="text" class="form-control" id="MontantRestNonPayPatrimoine" placeholder=" الباقي استخلاصه" required>
+                </div><br>
+                <div class="form-row">
+                    <label for="label"  id="labelAjouter">Remarques :</label>
+                    <input type="text" class="form-control" id="RemarqPatrimoine" placeholder="مـلاحضـــات">
+                </div><br><br>
+                    <button type="submit" class="btn" id="btnajouterPatrimoine">Ajouter</button><br><br>
+        </form>
+    </div>
+    <script src="javascript/MyJS.js"></script>
+</body>

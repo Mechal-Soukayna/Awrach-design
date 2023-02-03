@@ -1,0 +1,561 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color:white;
+    --sidebar-color: rgb(130, 183, 192);
+    --primary-color: white;
+    --primary-color-light: rgb(93, 77, 110);
+    --toggle-color:white;
+    --text-color: black;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body{
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+::selection{
+     background-color: var(--primary-color);
+    color: #fff; 
+}
+
+/* ===== Sidebar ===== */
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;  
+} 
+.sidebar.close{
+    width: 88px;
+}
+
+.sidebar li{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar header .image,
+.sidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+}
+
+.sidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.sidebar .text,
+.sidebar .icon{
+    color: var(--text-color);
+     transition: var(--tran-03); 
+}
+
+.sidebar .text{
+    
+    font-size: 17px;
+    font-weight: 500;
+     white-space: nowrap;  
+    opacity: 1; 
+}
+.sidebar.close .text{
+     opacity: 0; 
+}
+.sidebar header{
+     position: relative; 
+}
+
+.sidebar header .image-text{
+    display: flex;
+     align-items: center; 
+}
+.sidebar header .logo-text{
+    display: flex;
+    flex-direction: column;
+}
+header .image-text .name {
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .image-text .profession{
+    font-size: 16px;
+    margin-top: -2px;
+    display: block;
+}
+
+.sidebar header .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar header .image img{
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+.sidebar.close .toggle{
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.sidebar .menu{
+    margin-top: 40px;
+}
+
+.sidebar li.search-box{
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+.sidebar li a{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+}
+.sidebar li a:hover{
+    background-color: var(--primary-color);
+}
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: var(--sidebar-color);
+}
+.sidebar .menu-bar{
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+ .menu-bar::-webkit-scrollbar{
+    display: none;
+}
+.switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: var(--sidebar-color);
+    transition: var(--tran-04);
+}
+.home{
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+.home .text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 12px 60px;
+}
+.home .form{
+    text-align: center;
+}
+.sidebar.close ~ .home{
+    left: 78px;
+    height: 100vh;
+    width: calc(100% - 78px);
+}
+body{
+    font-family: ' Arial', Helvetica, sans-serif;
+    padding-top:65px;
+}
+
+.img-brand{
+   margin-top: 10px;
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+}
+
+.img-brand:hover{
+    transform: rotate(360deg);
+    
+}
+
+.navbar-brand:hover .img-brand{
+    box-shadow: 1px 1px 10px #fff,
+                -1px -1px 10px #fff;
+    
+}
+
+.navbar li{
+  padding-right: 50px;
+    transition: 0.5s;
+}
+@media (min-width: 100px) {
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+}
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+textarea:focus, 
+select:focus, 
+select.custom-select:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 rgb(47, 126, 186),
+             1px 1px 6px #335198,
+             -1px -1px 6px #376bcb;
+}
+
+.jumbotron{
+  background-color: rgb(180, 122, 184);
+  color: rgb(51, 51, 145);
+}
+
+.rounded-bottom{
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.navbarbuttons{
+    background-color:white;
+    margin-left: 380px;
+    margin-right: 0%;
+    width: 60%;
+   
+}
+.btnnav{
+    color:  white;
+    margin-right: 4%;
+    margin-bottom: 2%;
+    width: 20%;
+    background-color: rgb(49, 108, 135);
+}
+.my-form{
+    width:80%;
+    border: 3px solid black;
+    margin-left: 300px;  
+    background-color:  rgb(134, 177, 185);
+}
+/**********page employee*************/
+.tableemployee, th, td {
+    border:1px solid black;
+    border-top:2px solid  black;
+  }
+.tableemployee th{
+    width: 40%;
+}
+.my-form hr{
+    border-top: 1px solid black;
+}
+/*********page rechercher************/
+.btnsearch{
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
+    width: 20%;
+    font-size: 17px;
+    font-weight: 500;
+}
+#labelChercher{
+    width: 20%;
+}
+#CinRechercher,#NomCompRechercher,
+#AdresseRechercher{
+   margin-left: 0px;
+}
+
+
+/**********page profile**************/
+.my-form hr{
+    border-top: 1px solid black;
+}
+.my-form input[type=password]{
+    width: 60%;
+    background-color: white;
+}
+.my-form input[type=text]{
+    width: 60%;
+}
+.my-form input[type=date]{
+    width: 60%;
+    display: inline-block;
+}
+input[type=radio]{
+    width: 2%;
+    margin-right: 10px;
+}
+#ServiceProfile{
+    width: 60%;
+}
+.my-form input[type=email]{
+    width: 60%;
+}
+/******** Page login********/
+.my-form-login{
+    width:40%;
+    height: 60%;
+    background-color: rgb(134, 177, 185);
+    border: 1px solid black;
+    border-radius: 9px;
+    margin-left: 450px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+#btnconnecter{
+    width: 40%;
+    background: rgb(88, 155, 176);
+    margin-left: 300px;
+    border-radius: 50px;
+}
+
+#inputusername,#inputpassword{
+    width: 90%;
+    display: inline-flex;
+    background-color: rgb(134, 177, 185);
+    border-top: 1px solid rgb(134, 177, 185);
+    border-right: 0px solid rgb(134, 177, 185);
+    border-left: 0px solid rgb(134, 177, 185);
+    border-bottom: 0px solid rgb(134, 177, 185);
+}
+#btnconnecter{
+    margin-left: 100px;
+    background-color: rgb(233, 239, 240);
+    border-radius: 30px;
+    width: 60%;
+    color: black;
+    border: 1px solid white;
+}
+.form-groupsign{
+    margin: 31px auto ;
+    width: 80%;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px; 
+}
+.form-groupsign ::placeholder{
+    color:rgb(74, 74, 74);
+}
+.eye{
+    position: absolute;
+}
+#hide1{
+    display: none;
+}
+#iconuser{
+    background-color:rgb(134, 177, 185);
+    
+}
+.my-form-login a{
+    color: white;
+    margin-left: 155px;
+}
+.my-form-login h3{
+    color: white;
+}
+.bodylogin{
+    background-color: white;
+}
+/***********page statistiques****************/
+.statis{
+    margin-left: 400px;
+}
+.card p{
+    font-size: 20px;
+    color: rgb(3, 3, 4);
+}
+.card img{
+    width: 18%;
+}
+.card h3{
+    color: rgb(81, 81, 219);
+    color: rgb(101, 101, 223);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+/**charts**/
+.my-form-statics{
+    background-color: white;
+    margin-left: 400px;
+    margin-right: 0px;
+    margin-top: 20px;
+}
+.charts{
+    grid-gap:20px;
+    width:100%;
+    padding-top: 0;
+}
+.chart{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px black;
+    width: 95%;
+}
+.charts img{
+    width: 5%;
+}
+/**************page user**************/
+h2{
+    text-align: center;
+    color:white;
+    font-size: 70px;
+}
+table{
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px ;
+    background-color: white;
+    text-align: left;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+thead{
+    box-shadow: 0 2px 5px ;
+}
+th{
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    border-color:white;
+    height: 50%;
+}
+tr{
+    border-color: white;
+    box-shadow: 0px 3px 3px rgb(230, 228, 228);
+}
+tr:nth-child(even){
+    background-color: rgb(247, 247, 247);
+}   
+td{
+    padding: 1rem 2rem;
+    border-color:white;
+
+}
+.tableuser a{
+    text-decoration: none;
+}
+.btnuser{
+    border-radius:2px solid black;
+    background-color: grey;
+    color: white;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    justify-content: center;
+}
+/*******Control*******/
+#labelAjouter{
+    width: 15%;
+    color: black;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.btn{
+    background-color: white;
+    width: 30%;
+    margin-left: 350px;
+}
+.form-control{
+    width: 60%;
+}
+input[type=date]{
+    width: 60%;
+ 
+}
+#permis{
+    width: 60%;
+}
+input[type=radio]{
+    width: 2%;
+    margin-right: 10px;
+}
+span{
+    width: 10%;
+}
+/***********email***************/
+#btnemail{
+    margin-left: 100px;
+    background-color: rgb(233, 239, 240);
+    border-radius: 10px;
+    width: 40%;
+    color: black;
+    border: 1px solid white;
+}
+#labelemail{
+    color: white;
+    margin-left: 100px;
+}
+
